@@ -1,0 +1,7 @@
+Name: stbi
+Version: 1.33
+Description: stb_image - Public domain JPEG/PNG reader
+SourcePath: source
+IncludePaths: ./c-source
+Imports: stb/image
+
