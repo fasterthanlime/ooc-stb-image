@@ -4,4 +4,5 @@ Description: stb_image - Public domain JPEG/PNG reader
 SourcePath: source
 IncludePaths: ./c-source
 Imports: stb/image
+Additionals: ./c-source/stb_image.c
 
