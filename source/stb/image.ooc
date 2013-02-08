@@ -1,5 +1,5 @@
 use stbi
-include stb_image
+include ./stb_image
 
 StbIoCallbacks: cover {
   read: Pointer /* Func (user: Pointer, data: Char*, size: Int) -> Int */
