@@ -3,8 +3,12 @@ import stb/image
 
 import utils
 
+// sdk stuff
+import structs/ArrayList
+
 main: func {
-    ["png", "jpg", "bmp", "tga"] each(String, |ext|
+    exts := ArrayList<String> new(). add("png"). add("jpg"). add("bmp"). add("tga")
+    exts each(|ext|
         load("checker.%s" format(ext))
     )
 }

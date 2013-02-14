@@ -18,5 +18,7 @@ StbImage: class {
   fromCb: extern(stbi_load_from_callbacks) static func (clbk: StbIoCallbacks*, user: Pointer, \
     x: Int*, y: Int*, comp: Int*, reqComp: Int) -> UInt8*
 
+  failureReason: extern(stbi_failure_reason) static func -> CString
+
 }
 
