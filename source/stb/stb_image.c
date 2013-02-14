@@ -64,10 +64,6 @@
 #ifndef STBI_INCLUDE_STB_IMAGE_H
 #define STBI_INCLUDE_STB_IMAGE_H
 
-// To get a header file for this, either cut and paste the header,
-// or create stb_image.h, #define STBI_HEADER_FILE_ONLY, and
-// then include stb_image.c from it.
-
 ////   begin header file  ////////////////////////////////////////////////////
 //
 // Limitations:
@@ -330,8 +326,6 @@ extern void stbi_install_YCbCr_to_RGB(stbi_YCbCr_to_RGB_run func);
 //
 ////   end header file   /////////////////////////////////////////////////////
 #endif // STBI_INCLUDE_STB_IMAGE_H
-
-#ifndef STBI_HEADER_FILE_ONLY
 
 #ifndef STBI_NO_HDR
 #include <math.h>  // ldexp
@@ -4582,8 +4576,6 @@ int stbi_info_from_callbacks(stbi_io_callbacks const *c, void *user, int *x, int
    start_callbacks(&s, (stbi_io_callbacks *) c, user);
    return stbi_info_main(&s,x,y,comp);
 }
-
-#endif // STBI_HEADER_FILE_ONLY
 
 /*
    revision history:
