@@ -7,10 +7,15 @@ import utils
 import structs/ArrayList
 
 main: func {
+    "Those should work: " println()
+
     exts := ArrayList<String> new(). add("png"). add("jpg"). add("bmp"). add("tga")
     exts each(|ext|
         load("checker.%s" format(ext))
     )
+
+    "This should fail: " println()
+    load("checker.progressive.jpg")
 }
 
 load: func (path: String) {
