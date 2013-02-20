@@ -1,4 +1,4 @@
-use stbi
+use stb-image
 include ./stb_image
 
 StbIoCallbacks: cover {
