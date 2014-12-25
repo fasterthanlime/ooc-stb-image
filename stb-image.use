@@ -3,6 +3,5 @@ Version: 1.33
 Description: stb_image - Public domain JPEG/PNG reader
 SourcePath: source
 Imports: stb/image
-Additionals: ./source/stb/stb_image.c
 Libs: -lm
 
