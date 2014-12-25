@@ -1,4 +1,4 @@
-use stbi
+use stb-image
 import stb/image
 
 info: func (pixels: UInt8*, path: String, width, height, components: Int) {

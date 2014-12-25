@@ -1,4 +1,4 @@
-use stbi
+use stb-image
 import stb/image
 
 import utils
